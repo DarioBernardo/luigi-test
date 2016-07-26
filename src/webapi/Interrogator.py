@@ -1,12 +1,13 @@
 from urllib.request import urlopen
 
-from temperature.json_temperature.JsonTemperatureParser import JsonTemperatureParser
+import settings
+from src.json_temperature.JsonTemperatureParser import JsonTemperatureParser
 
 
 class Interrogator:
 
     def __init__(self):
-        with open('key.txt') as f:
+        with open(settings.WEBSERVER_KEY) as f:
             self.key = f.readline()
 
     def execute(self, query):

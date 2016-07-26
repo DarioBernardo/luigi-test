@@ -1,7 +1,9 @@
+import os
 from datetime import date, datetime
 
-from temperature.Temperature_data_generator import generate_data_for
-from temperature.beans.Place import Place
+from settings import DATA_FOLDER
+from src.Temperature_data_generator import generate_data_for
+from src.beans.Place import Place
 import pandas as pd
 
 dataset_list = Place.get_all_places()
@@ -9,7 +11,7 @@ dataset_list = Place.get_all_places()
 for place in dataset_list:
     print("Updating {}".format(place.get_filename()))
 
-    df = pd.read_csv(place.get_filename(), sep=',', parse_dates=[0], encoding='utf-8')
+    df = pd.read_csv(os.path.join(DATA_FOLDER, place.get_filename()), sep=',', parse_dates=[0], encoding='utf-8')
     date_max = df.date.max()
 
     starting_date = date_max + pd.DateOffset(days=1)
@@ -24,6 +26,6 @@ for place in dataset_list:
         print(df_new)
 
         df = df.append(df_new, ignore_index=True)
-        df.to_csv(place.get_filename(), sep=',', encoding='utf-8', index=False)
+        df.to_csv(os.path.join(DATA_FOLDER, place.get_filename()), sep=',', encoding='utf-8', index=False)
     else:
         print("Data is already updated!")

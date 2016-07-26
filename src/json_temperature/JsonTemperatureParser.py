@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 
-from temperature.beans.Temperature import Temperature
+from src.beans.Temperature import Temperature
 
 
 class JsonTemperatureParser:
