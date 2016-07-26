@@ -1,3 +1,3 @@
-# luigi-test
+# Download weather temperature
 
-Data pipeline built with Luigi framework to download temperature data from
+Code that download weather temperature from web service
