@@ -1,4 +1,8 @@
 import os
+
+print(os.path)
+
+
 from datetime import date, datetime
 
 from settings import DATA_FOLDER
