@@ -1,6 +1,6 @@
 import os
 
-print(os.path)
+print("\n\n*****{}*******\n\n".format(os.path))
 
 
 from datetime import date, datetime
