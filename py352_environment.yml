@@ -183,7 +183,6 @@ dependencies:
   - nb-conda==1.1.0
   - nb-conda-kernels==1.0.3
   - rope-py3k==0.9.4.post1
-  - ruamel-yaml-==VERSION
   - sphinx-rtd-theme==0.1.9
   - tables==3.2.2
 prefix: /home/darber/.conda/envs/py352
