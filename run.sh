@@ -14,3 +14,7 @@ if [ $# -eq 0 ]
 fi
 
 source source_var py352
+
+python --version
+
+# python src/Update_temperature.py
