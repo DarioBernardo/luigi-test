@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usage:  run.sh anaconda_activate_path
-# /opt/anaconda3/bin/activate
+# ES: /opt/anaconda3/bin/activate
 
 
 source_var="activate"
@@ -20,4 +20,4 @@ source $source_var py352
 echo "Using python version:"
 python --version
 
-# python src/Update_temperature.py
+python src/Update_temperature.py
