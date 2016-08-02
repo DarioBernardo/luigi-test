@@ -13,7 +13,7 @@ if [ $# -eq 0 ]
     source_var = activate
 fi
 
-source source_var py352
+source $source_var py352
 
 python --version
 
