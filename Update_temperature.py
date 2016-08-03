@@ -6,7 +6,7 @@ from Temperature_data_generator import generate_data_for
 from beans.Place import Place
 from settings_loader import DATA_FOLDER
 
-dataset_list = Place.get_all_places()[:1]
+dataset_list = Place.get_all_places()
 
 for place in dataset_list:
     print("Updating {}".format(place.get_filename()))
