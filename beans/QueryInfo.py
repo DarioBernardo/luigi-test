@@ -1,5 +1,3 @@
-
-
 class QueryInfo:
 
     def __init__(self, year, month, day, state, city):

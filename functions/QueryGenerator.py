@@ -1,8 +1,7 @@
 from datetime import datetime
 
 import pandas as pd
-
-from src.beans.QueryInfo import QueryInfo
+from beans.QueryInfo import QueryInfo
 
 
 def generate_query(year_start, month_start, day_start, state, city):

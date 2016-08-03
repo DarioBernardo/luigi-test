@@ -1,16 +1,12 @@
 import os
-
-print("\n\n*****{}*******\n\n".format(os.path))
-
-
 from datetime import date, datetime
 
-from settings import DATA_FOLDER
-from src.Temperature_data_generator import generate_data_for
-from src.beans.Place import Place
 import pandas as pd
+from Temperature_data_generator import generate_data_for
+from beans.Place import Place
+from settings_loader import DATA_FOLDER
 
-dataset_list = Place.get_all_places()
+dataset_list = Place.get_all_places()[:1]
 
 for place in dataset_list:
     print("Updating {}".format(place.get_filename()))

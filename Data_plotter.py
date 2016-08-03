@@ -1,8 +1,8 @@
 import os
 
-import pandas as pd
 import matplotlib.pyplot as plt
-from settings import DATA_FOLDER
+import pandas as pd
+from temperature.settings_loader import DATA_FOLDER
 
 
 # Read the data

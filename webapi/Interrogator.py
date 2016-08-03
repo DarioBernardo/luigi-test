@@ -1,7 +1,8 @@
 from urllib.request import urlopen
 
-import settings
-from src.json_temperature.JsonTemperatureParser import JsonTemperatureParser
+from json_temperature.JsonTemperatureParser import JsonTemperatureParser
+
+import settings_loader as settings
 
 
 class Interrogator:

@@ -2,11 +2,10 @@ import logging
 import os
 
 import pandas as pd
+from functions.QueryGenerator import generate_query
+from settings_loader import DATA_FOLDER
+from webapi.Interrogator import Interrogator
 from tqdm import tqdm
-
-from settings import DATA_FOLDER
-from src.functions.QueryGenerator import generate_query
-from src.webapi.Interrogator import Interrogator
 
 logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.INFO)
 # logging.basicConfig(filename='temperature_app.log', level=logging.INFO)

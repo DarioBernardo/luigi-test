@@ -20,4 +20,4 @@ source $source_var py352
 echo "Using python version:"
 python --version
 
-python src/Update_temperature.py
+python Update_temperature.py
