@@ -20,6 +20,4 @@ source $source_var py352
 echo "Using python version:"
 python --version
 
-conda info -e
-
 python Update_temperature.py
